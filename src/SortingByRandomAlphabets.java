@@ -39,7 +39,7 @@ public class SortingByRandomAlphabets {
 		scan.close();
 		return words;
 	}
-
+//sorting function
 	public static boolean sorting(String[] words, String alphabetChars) {
 		//temps are for the char's place in array
 		//loopCount: for loop iteration number (based on short length)
