@@ -21,7 +21,7 @@ public class SortingByRandomAlphabets {
 			alphabet[randomIndexToSwap] = alphabet[i];
 			alphabet[i] = temp;
 		}
-//used StringBuffer to convert created random alphabet array to string
+//Used StringBuffer to convert created random alphabet array to string
 		StringBuffer stringBuffer = new StringBuffer();
 		for (int i = 0; i < alphabet.length; i++) {
 			stringBuffer.append(alphabet[i]);
@@ -30,7 +30,7 @@ public class SortingByRandomAlphabets {
 		return stringBuffer.toString();
 	}
 
-//scanning and creating word array function
+//Scanning and creating word array function
 	public static String[] scanToArray() {
 		Scanner scan = new Scanner(System.in);
 		System.out.println("Enter words with spaces: ");
@@ -39,7 +39,7 @@ public class SortingByRandomAlphabets {
 		scan.close();
 		return words;
 	}
-//sorting function
+//Sorting control function
 	public static boolean sorting(String[] words, String alphabetChars) {
 		//temps are for the char's place in array
 		//loopCount: for loop iteration number (based on short length)
