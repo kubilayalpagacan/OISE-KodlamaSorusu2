@@ -50,6 +50,11 @@ public class SortingByRandomAlphabets {
 			if (words[i].equals(words[i + 1])) {
 				continue;
 			} else if (words[i].contains(words[i + 1])) {
+				int tempFirst = alphabetChars.indexOf(words[i].charAt(0));
+				int tempSecond = alphabetChars.indexOf(words[i + 1].charAt(0));
+				if (tempFirst < tempSecond) {
+					return true;
+				}
 				return false;
 			} else if (words[i + 1].contains(words[i])) {
 				continue;
